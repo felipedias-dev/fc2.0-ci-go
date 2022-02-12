@@ -1,9 +1,12 @@
 name: ci-golang-workflow
 
 on: 
-  pull_request:
+  push:
     branches:
       - develop
+  pull_request:
+    branches:
+      - main
       
 jobs:
   
@@ -19,7 +22,7 @@ jobs:
           go-version: 1.17
       
       - name: Test
-        run: go test
+        run: go te
 
       - name: Run
         run: go run math.go
