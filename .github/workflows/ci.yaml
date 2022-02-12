@@ -13,7 +13,7 @@ jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
-      - name: Init set up
+      - name: Initial set up
         uses: actions/checkout@v2
       
       - name: Set up Go
