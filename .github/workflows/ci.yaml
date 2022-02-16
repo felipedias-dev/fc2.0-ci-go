@@ -21,6 +21,9 @@ jobs:
         with:
           go-version: 1.17
       
+      - name: Workdir
+        run: cd go/
+
       - name: Test
         run: go test
 
