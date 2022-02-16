@@ -31,7 +31,7 @@ jobs:
       - run: cd go/ && go test
 
       - name: Run
-        run: go run math.go
+        run: go run ./go/math.go
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
