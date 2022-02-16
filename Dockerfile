@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN cd go/ && go build -o math
+WORKDIR /app/go
 
-CMD ["./go/math"]
+RUN go build -o math
+
+CMD ["./math"]
