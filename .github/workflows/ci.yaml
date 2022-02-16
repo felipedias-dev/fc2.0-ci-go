@@ -26,8 +26,9 @@ jobs:
 
       - name: Test
         run: pwd
-        run: ls
-        run: cd go/ && go test
+        
+      - run: ls
+      - run: cd go/ && go test
 
       - name: Run
         run: go run math.go
